@@ -7,7 +7,7 @@ on:
       - master
 
   schedule:
-  - cron: "45 * * * *" # https://crontab.guru/#8,48_12,13,14,15,16,17_*_*_*
+  - cron: "15 * * * *" # https://crontab.guru/#8,48_12,13,14,15,16,17_*_*_*
 
 jobs:
   auto_commit:
@@ -49,4 +49,4 @@ jobs:
         with:
           force: true
           directory: "."
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}

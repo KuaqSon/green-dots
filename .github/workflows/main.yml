@@ -7,7 +7,7 @@ on:
       - master
 
   schedule:
-  - cron: "8,48 12,13,14,15,16,17 * * *" # https://crontab.guru/#8,48_12,13,14,15,16,17_*_*_*
+  - cron: "*/5 * * * *" # https://crontab.guru/#8,48_12,13,14,15,16,17_*_*_*
 
 jobs:
   auto_commit:
